@@ -1,0 +1,50 @@
+[
+  {
+    "id": "audit-buddy",
+    "title": "Audit Buddy — Pharma Compliance Automation",
+    "summary": "LLM + n8n pipeline that ingests SOPs, performs retrieval-augmented checks, and drafts audit notes.",
+    "impact": ["Cut manual review time 90%", "Improved coverage of critical checks", "Real-time compliance validation"],
+    "tech": ["LLM", "RAG", "n8n", "Docker", "Playwright", "Python", "FastAPI"],
+    "architecture": [
+      "Document ingestion → OCR preprocessing → chunking → vector store",
+      "Query planner → tool router → policy checks → compliance validation",
+      "Report composer → audit notes → export → dashboard tracking"
+    ],
+    "imageLayers": ["ab-base.svg", "ab-nodes.svg", "ab-lines.svg", "ab-dashboard.svg"],
+    "caseStudy": "/assets/case/audit-buddy.pdf",
+    "demoUrl": "https://demo.auditbuddy.com",
+    "githubUrl": "https://github.com/aravindmanoj/audit-buddy"
+  },
+  {
+    "id": "personal-assistant",
+    "title": "Personal AI Assistant — Realtime, Notes-Aware",
+    "summary": "Python + Obsidian + RSE.py; retrieval and action loops for everyday automation.",
+    "impact": ["Context-aware responses", "Extensible toolchain", "Automated note sync"],
+    "tech": ["Python", "LLM", "RAG", "Obsidian", "n8n", "Vector DB", "RSE.py"],
+    "architecture": [
+      "Knowledge base sync → embeddings → semantic search",
+      "Action executor → observation loop → tool routing",
+      "Note writer → summaries → Obsidian integration"
+    ],
+    "imageLayers": ["pa-base.svg", "pa-flow.svg", "pa-links.svg", "pa-obsidian.svg"],
+    "caseStudy": "/assets/case/personal-assistant.pdf",
+    "demoUrl": "https://replit.com/@aravind/personal-ai-assistant",
+    "githubUrl": "https://github.com/aravindmanoj/personal-ai-assistant"
+  },
+  {
+    "id": "media-bias",
+    "title": "Media Bias Analysis Pipeline — NLP at Scale",
+    "summary": "50k+ articles; BERTopic + DistilBERT/RoBERTa; visualization and evaluation.",
+    "impact": ["Macro-F1 +45%", "Minority emotion recall ×10", "50,000+ articles processed"],
+    "tech": ["Python", "BERTopic", "DistilBERT", "RoBERTa", "Scikit-learn", "Plotly"],
+    "architecture": [
+      "Large-scale text ingestion → cleaning → preprocessing pipeline",
+      "BERTopic clustering → topic extraction → bias identification",
+      "Fine-tune classifiers → evaluation → interactive dashboards"
+    ],
+    "imageLayers": ["mb-base.svg", "mb-topics.svg", "mb-arrows.svg", "mb-dashboard.svg"],
+    "caseStudy": "/assets/case/media-bias.pdf",
+    "demoUrl": "https://vercel.com/aravind/media-bias-analysis",
+    "githubUrl": "https://github.com/aravindmanoj/media-bias-analysis"
+  }
+]
