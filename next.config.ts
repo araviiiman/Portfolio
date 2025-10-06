@@ -6,9 +6,9 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true
   },
-  // Remove basePath and assetPrefix for GitHub Pages
-  // assetPrefix: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
-  // basePath: process.env.NODE_ENV === 'production' ? '/Portfolio' : '',
+  assetPrefix: '',
+  basePath: '',
+  distDir: 'out',
 };
 
 export default nextConfig;
