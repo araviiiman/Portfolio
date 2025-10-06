@@ -64,8 +64,8 @@ public/
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/aravindmanoj/portfolio.git
-cd portfolio
+git clone https://github.com/araviiiman/Portfolio.git
+cd Portfolio
 ```
 
 2. Install dependencies:
