@@ -193,6 +193,10 @@ MIT License - see LICENSE file for details.
 - **LinkedIn**: [linkedin.com/in/aravindmanoj](https://linkedin.com/in/aravindmanoj)
 - **GitHub**: [github.com/aravindmanoj](https://github.com/aravindmanoj)
 
+## 🌐 Live Site
+
+**Portfolio**: https://araviiiman.github.io/Portfolio/
+
 ---
 
 Built with ❤️ by Aravind Manoj
