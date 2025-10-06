@@ -2,7 +2,7 @@
   {
     "id": "audit-buddy",
     "title": "Audit Buddy — Pharma Compliance Automation",
-    "summary": "LLM + n8n pipeline that ingests SOPs, performs retrieval-augmented checks, and drafts audit notes.",
+    "summary": "Developing an AI-driven compliance assistant that automates document retrieval and processing using LLMs to streamline pharmaceutical regulatory audits.",
     "impact": ["Cut manual review time 90%", "Improved coverage of critical checks", "Real-time compliance validation"],
     "tech": ["LLM", "RAG", "n8n", "Docker", "Playwright", "Python", "FastAPI"],
     "architecture": [
@@ -18,7 +18,7 @@
   {
     "id": "personal-assistant",
     "title": "Personal AI Assistant — Realtime, Notes-Aware",
-    "summary": "Python + Obsidian + RSE.py; retrieval and action loops for everyday automation.",
+    "summary": "Built a personal AI assistant from scratch in Python, integrating API for knowledge, NLP for decision-making, and Obsidian for note management, while designing a roadmap for reinforcement learning and autonomous agent-based features.",
     "impact": ["Context-aware responses", "Extensible toolchain", "Automated note sync"],
     "tech": ["Python", "LLM", "RAG", "Obsidian", "n8n", "Vector DB", "RSE.py"],
     "architecture": [
@@ -34,7 +34,7 @@
   {
     "id": "media-bias",
     "title": "Media Bias Analysis Pipeline — NLP at Scale",
-    "summary": "50k+ articles; BERTopic + DistilBERT/RoBERTa; visualization and evaluation.",
+    "summary": "Built an NLP pipeline on 50,000+ health news articles, using BERTopic for theme discovery and fine-tuned DistilBERT to boost macro F1-score by 45%, improving minority emotion recall 10X; leveraged RoBERTa to reveal emotional framing patterns in biased content.",
     "impact": ["Macro-F1 +45%", "Minority emotion recall ×10", "50,000+ articles processed"],
     "tech": ["Python", "BERTopic", "DistilBERT", "RoBERTa", "Scikit-learn", "Plotly"],
     "architecture": [
