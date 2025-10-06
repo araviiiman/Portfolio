@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aravind Manoj | Data & AI Engineer</title>
+    <meta name="description" content="Building enterprise intelligent systems and AI assistants for compliance, automation, and insight.">
+    <link rel="icon" href="/favicon.ico">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #171717;
+            background: #ffffff;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+        }
+        
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #171717;
+        }
+        
+        .hero h2 {
+            font-size: 2rem;
+            font-weight: 500;
+            margin-bottom: 2rem;
+            color: #06b6d4;
+        }
+        
+        .hero p {
+            font-size: 1.25rem;
+            color: #64748b;
+            margin-bottom: 3rem;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .cta-buttons {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            padding: 1rem 2rem;
+            border-radius: 0.5rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        
+        .btn-primary {
+            background: #06b6d4;
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background: #0891b2;
+            transform: translateY(-2px);
+        }
+        
+        .btn-secondary {
+            background: transparent;
+            color: #64748b;
+            border: 2px solid #e2e8f0;
+        }
+        
+        .btn-secondary:hover {
+            border-color: #06b6d4;
+            color: #06b6d4;
+            transform: translateY(-2px);
+        }
+        
+        .section {
+            padding: 5rem 0;
+        }
+        
+        .section h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 3rem;
+            color: #171717;
+        }
+        
+        .projects {
+            background: #f8fafc;
+        }
+        
+        .project-grid {
+            display: grid;
+            gap: 3rem;
+            margin-top: 3rem;
+        }
+        
+        .project-card {
+            background: white;
+            border-radius: 1rem;
+            padding: 2rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1);
+        }
+        
+        .project-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #171717;
+        }
+        
+        .project-card .summary {
+            color: #06b6d4;
+            font-size: 1.125rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .tech-tag {
+            background: #f1f5f9;
+            color: #475569;
+            padding: 0.25rem 0.75rem;
+            border-radius: 0.375rem;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .metrics {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .metric {
+            background: #ecfeff;
+            color: #0891b2;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.875rem;
+            font-weight: 500;
+        }
+        
+        .contact {
+            background: #f8fafc;
+        }
+        
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 3rem;
+        }
+        
+        .contact-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 1rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+        
+        .contact-card h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #171717;
+        }
+        
+        .contact-links {
+            display: flex;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        
+        .contact-link {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            background: #f1f5f9;
+            border-radius: 0.5rem;
+            text-decoration: none;
+            color: #475569;
+            transition: all 0.3s ease;
+        }
+        
+        .contact-link:hover {
+            background: #06b6d4;
+            color: white;
+        }
+        
+        .footer {
+            background: #1e293b;
+            color: #94a3b8;
+            text-align: center;
+            padding: 2rem 0;
+        }
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.5rem;
+            }
+            
+            .hero p {
+                font-size: 1rem;
+            }
+            
+            .cta-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .section h2 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <section class="hero">
+        <div class="container">
+            <h1>Aravind Manoj</h1>
+            <h2>Data & AI Engineer</h2>
+            <p>Building enterprise intelligent systems and AI assistants for compliance, automation, and insight.</p>
+            <div class="cta-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Audit Buddy Prototype</h3>
+                    <div class="summary">Pharma Compliance Automation</div>
+                    <div class="metrics">
+                        <span class="metric">90% time reduction</span>
+                        <span class="metric">Automated document parsing</span>
+                        <span class="metric">Real-time compliance checks</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">LLMs</span>
+                        <span class="tech-tag">n8n</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">FastAPI</span>
+                    </div>
+                    <p>Built an intelligent document processing system using LLMs for automated compliance checking, with n8n orchestrating the workflow and Docker for scalable deployment.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Personal AI Assistant</h3>
+                    <div class="summary">Realtime Assistant with Knowledge Base</div>
+                    <div class="metrics">
+                        <span class="metric">Context-aware responses</span>
+                        <span class="metric">Knowledge base integration</span>
+                        <span class="metric">Automated note sync</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Obsidian</span>
+                        <span class="tech-tag">RSE.py</span>
+                        <span class="tech-tag">LLM Integrations</span>
+                        <span class="tech-tag">Vector DB</span>
+                    </div>
+                    <p>Developed a context-aware AI assistant with integrated knowledge base using Obsidian for note management, RSE.py for research automation, and vector databases for semantic search.</p>
+                </div>
+
+                <div class="project-card">
+                    <h3>Media Bias Analysis Pipeline</h3>
+                    <div class="summary">NLP & Text Mining at Scale</div>
+                    <div class="metrics">
+                        <span class="metric">50,000+ articles processed</span>
+                        <span class="metric">45% macro-F1 improvement</span>
+                        <span class="metric">10x minority recall boost</span>
+                    </div>
+                    <div class="tech-tags">
+                        <span class="tech-tag">BERTopic</span>
+                        <span class="tech-tag">DistilBERT</span>
+                        <span class="tech-tag">RoBERTa</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">Scikit-learn</span>
+                    </div>
+                    <p>Built a comprehensive NLP pipeline using BERTopic for topic modeling, DistilBERT for efficient text classification, and RoBERTa for fine-tuned sentiment analysis on 50,000+ articles.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section contact">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <div class="contact-info">
+                <div class="contact-card">
+                    <h3>About Me</h3>
+                    <p>Passionate M.Sc. Data Science student with hands-on experience developing enterprise intelligent systems and AI-powered solutions. Proven ability to build end-to-end data pipelines, chatbots, and context-aware agents to streamline pharmaceutical compliance and digital workflows.</p>
+                </div>
+                
+                <div class="contact-card">
+                    <h3>Connect</h3>
+                    <p>Ready to collaborate on your next data science or AI project? Let's discuss how we can build something amazing together.</p>
+                    <div class="contact-links">
+                        <a href="mailto:aravind.manoj@email.com" class="contact-link">📧 Email</a>
+                        <a href="https://github.com/aravindmanoj" class="contact-link">🐙 GitHub</a>
+                        <a href="https://linkedin.com/in/aravindmanoj" class="contact-link">💼 LinkedIn</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2024 Aravind Manoj. Built with Next.js, TypeScript, and Tailwind CSS.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
