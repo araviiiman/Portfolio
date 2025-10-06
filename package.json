@@ -10,7 +10,7 @@
     "lint": "eslint . --ext .ts,.tsx",
     "lint:fix": "eslint . --ext .ts,.tsx --fix",
     "type-check": "tsc --noEmit",
-    "export": "next build && next export"
+    "export": "next build"
   },
   "dependencies": {
     "@types/marked": "^5.0.2",
